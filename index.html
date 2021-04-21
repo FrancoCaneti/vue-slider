@@ -24,9 +24,10 @@
                 <img :src="photos[indexPhoto]" alt="foto">
             </div>
 
-            <div class="next">
+            <div class="next" @click="nextPhoto">
                 <i class="fas fa-angle-right"></i>
             </div>
+            
             <div class="nav">
                 <i class="fas fa-circle active first"></i>
                 <i class="fas fa-circle"></i>
