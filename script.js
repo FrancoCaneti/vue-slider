@@ -11,17 +11,20 @@ const app = new Vue ({
     },
     methods: {
         prevPhoto(){
-            this.indexPhoto -=1;
+            this.indexPhoto -= 1;
+
             if(this.indexPhoto < 0) {
-                this.indexPhoto = this.photos.lenght -1
+                this.indexPhoto = this.photos.length -1
             }
         },
-        nextPhoto(){
+        nextPhoto() {
             this.indexPhoto += 1;
-            if( this.indexPhoto >  (this.photos.lenght -1)) {
+            if( this.indexPhoto >  (this.photos.length -1)) {
                 this.index = 0;
             }
-        }
-       
+        },
+       setPhoto(index){
+           this.indexPhoto = index;
+       }
     }
 });
