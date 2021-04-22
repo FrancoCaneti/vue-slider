@@ -12,30 +12,34 @@
     <!--Vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
+
+
 <body>
-    <div id="app">
-    <div   class="container">
+    
+    <div  id='app' class="container">
         <div class="slider-wrapper">
-            <div class="prev" @click='prev'>
+            <div class="prev" @click='prevPhoto'>
                 <i class="fas fa-angle-left"></i>
             </div>
+
             <div class="images">
                 <img :src="photos[indexPhoto]" alt="lorem">
-              
             </div>
+            
             <div class="next" @click="nextPhoto">
                 <i class="fas fa-angle-right"></i>
             </div>
             <div class="nav">
+
                 <i v-for="(photo, index) in photos"
                 class="fas fa-circle"
-                :class='{ active:index == indexPhoto}'
-                @click='setPhoto(index)'></i>
+                :class="{ active: index == indexPhoto}"
+                @click="setPhoto(index)"></i>
                 
             </div>
         </div>
     </div>
-</div>  
+ 
 <!--JS-->
     <script src="./script.js"></script>
 </body>

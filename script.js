@@ -10,13 +10,13 @@ const app = new Vue ({
         indexPhoto:0,
     },
     methods: {
-        prev(){
+        prevPhoto(){
             this.indexPhoto -=1;
             if(this.indexPhoto < 0) {
                 this.indexPhoto = this.photos.lenght -1
             }
         },
-        next(){
+        nextPhoto(){
             this.indexPhoto += 1;
             if( this.indexPhoto >  (this.photos.lenght -1)) {
                 this.index = 0;
