@@ -56,16 +56,16 @@
 }
 
 .nav > i.active{
-    color:rgb(0, 60, 255)
+    color:rgb(30, 218, 30)
 }
 i.active:first-child{
-    color:yellow
+    color:blue
 }
-i.active:nth-child(3){
+i.active:nth-child(2){
     color:rgb(255, 0, 0)
 }
 
 i.active:nth-child(3){
-    color:rgb(0, 255, 13)
+    color:yellow
 }
 
